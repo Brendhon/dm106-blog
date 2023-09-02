@@ -1,3 +1,5 @@
+using Blog.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +16,9 @@ builder.Services.AddLogging(loggingBuilder =>
    loggingBuilder.AddDebug();
    loggingBuilder.AddAzureWebAppDiagnostics();
  });
+
+// Add the UserInfoService to the DI container
+builder.Services.AddScoped<UserInfoService>();
 
 var app = builder.Build();
 

@@ -15,6 +15,7 @@ namespace Blog.Services
         // Create a UserInfoModel object from the decoded token
         UserInfoModel userInfoModel = new UserInfoModel()
         {
+          // Claims - Get the value of the claim with the specified type
           Email = token.Claims.First(c => c.Type == "email").Value,
           Name = token.Claims.First(c => c.Type == "name").Value
         };
