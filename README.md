@@ -108,6 +108,7 @@ $ dotnet ef migrations script -o ./script.sql
 
 ## Observações
 
+- Foi adicionado um arquivo do Postman na raiz do projeto para testar a API.
 - Lembrando que é necessário habilitar o acesso ao banco de dados do Azure para o IP da sua máquina, caso contrário, não será possível acessar o banco de dados.
 - Após executar a aplicação, acesse a documentação da API em: **[http://localhost:5000/swagger/index.html](http://localhost:5000/swagger/index.html)**
 - Lembre-se, sempre que alterar o banco de dados, é necessário criar uma nova migration e atualizar o banco de dados, para isso, utilize os comando acima.
